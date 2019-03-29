@@ -1,0 +1,35 @@
+<!--
+  Generated template for the Practica3Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>practica3</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-fab bottom>
+        <button ion-fab color="dark" (click)="next()"><ion-icon name="row"></ion-icon></button>          
+    </ion-fab>
+    <h3 text-center>Area Triangulo</h3> 
+        <hr>  
+        <ion-list>
+          <ion-item>
+            <ion-label stacked>Base</ion-label>
+            <ion-input type="text" id="v1" [(ngModel)]="datos.v1"></ion-input>
+          </ion-item>  
+          <ion-item>
+            <ion-label stacked>Altura</ion-label>
+            <ion-input type="text" id="v2" [(ngModel)]="datos.v2"></ion-input>
+          </ion-item>  
+        </ion-list>    
+      <button  ion-button full style="margin-top:25px" (click)="area()" color="secondary">Aceptar</button>
+
+
+</ion-content>

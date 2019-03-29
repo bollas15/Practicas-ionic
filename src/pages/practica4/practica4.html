@@ -1,0 +1,38 @@
+<!--
+  Generated template for the Practica4Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>practica4</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-fab bottom>
+        <button ion-fab color="dark" (click)="next()"><ion-icon name="row"></ion-icon></button>          
+    </ion-fab>
+    <h3 text-center>Operaciones</h3> 
+        <hr>  
+        <ion-list>
+          <ion-item>
+            <ion-label stacked>numero1</ion-label>
+            <ion-input type="text" id="v1" [(ngModel)]="datos.v1"></ion-input>
+          </ion-item>  
+          <ion-item>
+            <ion-label stacked>numero2</ion-label>
+            <ion-input type="text" id="v2" [(ngModel)]="datos.v2"></ion-input>
+          </ion-item>  
+        </ion-list>    
+      <button  ion-button style="margin-top:25px" (click)="suma()" color="secondary">+</button>
+      <button  ion-button style="margin-top:25px" (click)="resta()" color="secondary">-</button>
+      <button  ion-button style="margin-top:25px" (click)="mult()" color="secondary">*</button>
+      <button  ion-button style="margin-top:25px" (click)="div()" color="secondary">/</button>
+
+
+</ion-content>
